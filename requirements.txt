@@ -1,1 +1,2 @@
-redis==3.3.11
+redis-py-cluster==2.1.2
+redis~=3.5.3

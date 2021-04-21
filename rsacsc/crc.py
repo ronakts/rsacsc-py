@@ -135,8 +135,9 @@ crc64_tab = [
     0x536fa08fdfd90e51, 0x29b7d047efec8728,
 ]
 
+
 def crc64(s):
-    ''' Returns the crc '''
+    """ Returns the crc """
     crc = 0
     for c in s:
         crc = crc64_tab[(crc ^ ord(c)) & 255] ^ (crc >> 8)

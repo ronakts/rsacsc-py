@@ -1,10 +1,11 @@
-'''
+"""
 source: https://docs.python.org/3/library/collections.html#ordereddict-examples-and-recipes
-'''
+"""
 from collections import OrderedDict
 
+
 class Cache(OrderedDict):
-    'Limit size, evicting the least recently looked-up key when full'
+    """Limit size, evicting the least recently looked-up key when full"""
 
     def __init__(self, manager, maxsize=128, *args, **kwds):
         self.maxsize = maxsize
